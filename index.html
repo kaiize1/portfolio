@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas COSTALLES — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ══ NAVBAR ══════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">LC</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about"    data-fr="À propos"    data-en="About">À propos</a></li>
+                <li><a href="#projects" data-fr="Projets"     data-en="Projects">Projets</a></li>
+                <li><a href="#skills"   data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                <li><a href="#journey"  data-fr="Parcours"    data-en="Journey">Parcours</a></li>
+                <li><a href="#contact"  data-fr="Contact"     data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="lang-btn" id="langToggle" aria-label="Changer de langue">FR</button>
+                <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══ HERO ════════════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-inner">
+            <img src="assets/photo.jpg" alt="Lucas COSTALLES" class="hero-photo">
+            <div class="hero-text">
+                <p class="hero-tag"
+                   data-fr="Développeur &amp; Testeur QA"
+                   data-en="Developer &amp; QA Tester">
+                    Développeur &amp; Testeur QA
+                </p>
+                <h1>Lucas COSTALLES</h1>
+                <p class="hero-desc"
+                   data-fr="Développeur et testeur QA avec deux ans d'expérience en alternance, j'ai acquis une vision complète du cycle de développement logiciel. En entreprise, j'ai contribué à la qualité et l'automatisation des tests, tandis qu'en formation j'ai développé mes compétences en programmation (web, Java, SQL). Je cherche à approfondir cette base technique via un bachelor pour progresser vers un master."
+                   data-en="Developer and QA tester with two years of work-study experience, I have gained a comprehensive view of the software development cycle. In the workplace, I contributed to quality and test automation, while in my studies I developed my programming skills (web, Java, SQL). I am looking to build on this technical foundation through a bachelor's degree and progress toward a master's.">
+                    Développeur et testeur QA avec deux ans d'expérience en alternance, j'ai acquis une vision complète du cycle de développement logiciel. En entreprise, j'ai contribué à la qualité et l'automatisation des tests, tandis qu'en formation j'ai développé mes compétences en programmation (web, Java, SQL). Je cherche à approfondir cette base technique via un bachelor pour progresser vers un master.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary"
+                       data-fr="Me contacter" data-en="Contact me">
+                        Me contacter
+                    </a>
+                    <a href="assets/CV_COSTALLES_Lucas_2026.pdf" download class="btn btn-outline"
+                       data-fr="Télécharger mon CV" data-en="Download my CV">
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ ABOUT ════════════════════════════════════════════ -->
+    <section id="about">
+        <div class="section-inner">
+            <h2 class="section-title" data-fr="À propos" data-en="About">À propos</h2>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label" data-fr="ans d'alternance" data-en="years work-study">ans d'alternance</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label" data-fr="ans de formation post-bac" data-en="years of post-secondary education">ans de formation post-bac</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label" data-fr="technologies" data-en="technologies">technologies</span>
+                </div>
+            </div>
+            <div class="about-interests">
+                <p class="interests-title" data-fr="Centres d'intérêt" data-en="Interests">Centres d'intérêt</p>
+                <div class="interest-tags">
+                    <span data-fr="🏃 Sport (foot, basket, athlétisme)" data-en="🏃 Sport (football, basketball, athletics)">🏃 Sport (foot, basket, athlétisme)</span>
+                    <span data-fr="💻 Informatique"  data-en="💻 Technology">💻 Informatique</span>
+                    <span data-fr="🎵 Musique"       data-en="🎵 Music">🎵 Musique</span>
+                    <span data-fr="✈️ Voyages"       data-en="✈️ Travel">✈️ Voyages</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ PROJECTS ══════════════════════════════════════════ -->
+    <section id="projects">
+        <div class="section-inner">
+            <h2 class="section-title" data-fr="Projets" data-en="Projects">Projets</h2>
+            <div class="projects-grid">
+
+                <!-- Ciné-Stock -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-icon">🎬</span>
+                        <div>
+                            <h3>Ciné-Stock</h3>
+                            <span class="project-badge"
+                                  data-fr="Projet scolaire" data-en="School project">
+                                Projet scolaire
+                            </span>
+                        </div>
+                    </div>
+                    <p data-fr="Plateforme web de location de films avec interface complète. Intègre une API REST pour la récupération des données films et une base de données SQL pour la gestion du catalogue et des locations."
+                       data-en="Web-based film rental platform with a complete interface. Integrates a REST API for retrieving film data and a SQL database for managing the catalogue and rentals.">
+                        Plateforme web de location de films avec interface complète. Intègre une API REST pour la récupération des données films et une base de données SQL pour la gestion du catalogue et des locations.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span><span>API REST</span>
+                    </div>
+                </article>
+
+                <!-- OW Guess -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-icon">🎮</span>
+                        <div>
+                            <h3>OW Guess</h3>
+                            <span class="project-badge"
+                                  data-fr="Projet personnel" data-en="Personal project">
+                                Projet personnel
+                            </span>
+                        </div>
+                    </div>
+                    <p data-fr="Site de mini-jeux interactifs basé sur l'univers d'Overwatch. Plusieurs modes de jeu incluant des devinettes de personnages et des quiz pour tester ses connaissances sur le jeu."
+                       data-en="Interactive mini-game website based on the Overwatch universe. Multiple game modes including character guessing games and quizzes to test your knowledge of the game.">
+                        Site de mini-jeux interactifs basé sur l'univers d'Overwatch. Plusieurs modes de jeu incluant des devinettes de personnages et des quiz pour tester ses connaissances sur le jeu.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+                <!-- Scripts QA -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-icon">⚙️</span>
+                        <div>
+                            <h3 data-fr="Automatisation QA" data-en="QA Automation">Automatisation QA</h3>
+                            <span class="project-badge"
+                                  data-fr="Alternance — Anyware Video" data-en="Work-study — Anyware Video">
+                                Alternance — Anyware Video
+                            </span>
+                        </div>
+                    </div>
+                    <p data-fr="Scripts d'automatisation de tests développés en alternance chez Anyware Video. Scripts C# sur Telerik Test Studio pour l'automatisation des tests logiciels, et scripts Shell pour l'automatisation de processus et de pipelines de tests."
+                       data-en="Test automation scripts developed during the work-study at Anyware Video. C# scripts in Telerik Test Studio for software test automation, and Shell scripts for process and test pipeline automation.">
+                        Scripts d'automatisation de tests développés en alternance chez Anyware Video. Scripts C# sur Telerik Test Studio pour l'automatisation des tests logiciels, et scripts Shell pour l'automatisation de processus et de pipelines de tests.
+                    </p>
+                    <div class="tech-tags">
+                        <span>C#</span><span>Shell</span><span>Telerik Test Studio</span><span>JIRA</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SKILLS ════════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="section-inner">
+            <h2 class="section-title" data-fr="Compétences" data-en="Skills">Compétences</h2>
+            <div class="skills-grid">
+
+                <div class="skills-cat">
+                    <h3 data-fr="Programmation" data-en="Programming">Programmation</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>Java</span><span>C#</span><span>Shell</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat">
+                    <h3>Web</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat">
+                    <h3 data-fr="Base de données" data-en="Database">Base de données</h3>
+                    <div class="skill-tags">
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat">
+                    <h3 data-fr="Outils" data-en="Tools">Outils</h3>
+                    <div class="skill-tags">
+                        <span>JIRA</span><span>Telerik Test Studio</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat">
+                    <h3 data-fr="Langues" data-en="Languages">Langues</h3>
+                    <div class="skill-tags">
+                        <span data-fr="Français (natif)" data-en="French (native)">Français (natif)</span>
+                        <span data-fr="Anglais" data-en="English">Anglais</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat">
+                    <h3 data-fr="Savoir-être" data-en="Soft skills">Savoir-être</h3>
+                    <div class="skill-tags">
+                        <span data-fr="Curiosité"    data-en="Curiosity">Curiosité</span>
+                        <span data-fr="Polyvalence"  data-en="Versatility">Polyvalence</span>
+                        <span data-fr="Autonomie"    data-en="Autonomy">Autonomie</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ JOURNEY ═══════════════════════════════════════════ -->
+    <section id="journey">
+        <div class="section-inner">
+            <h2 class="section-title" data-fr="Parcours" data-en="Journey">Parcours</h2>
+            <div class="journey-cols">
+
+                <!-- Formation -->
+                <div class="journey-col">
+                    <h3 class="col-title" data-fr="Formation" data-en="Education">Formation</h3>
+                    <div class="timeline">
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date">2024 — 2026</span>
+                                <h4 data-fr="BTS SIO option SLAM" data-en="BTS SIO — SLAM">BTS SIO option SLAM</h4>
+                                <p data-fr="École Diderot, Aix-en-Provence"
+                                   data-en="École Diderot, Aix-en-Provence">
+                                    École Diderot, Aix-en-Provence
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date">2023 — 2024</span>
+                                <h4 data-fr="L1 Informatique" data-en="1st year — Computer Science">L1 Informatique</h4>
+                                <p data-fr="Faculté de sciences St Charles, Marseille"
+                                   data-en="St Charles Science Faculty, Marseille">
+                                    Faculté de sciences St Charles, Marseille
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date">2023</span>
+                                <h4 data-fr="BAC Général — Mention Assez Bien"
+                                    data-en="French Baccalaureate — Merit">
+                                    BAC Général — Mention Assez Bien
+                                </h4>
+                                <p data-fr="Spécialités Maths/Numérique &amp; Sciences Informatiques — Lycée Monté Cristo, Allauch"
+                                   data-en="Specialisations: Maths/Digital &amp; Computer Science — Lycée Monté Cristo, Allauch">
+                                    Spécialités Maths/Numérique &amp; Sciences Informatiques — Lycée Monté Cristo, Allauch
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Expériences -->
+                <div class="journey-col">
+                    <h3 class="col-title" data-fr="Expériences" data-en="Experience">Expériences</h3>
+                    <div class="timeline">
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date">2024 — 2026</span>
+                                <h4 data-fr="Testeur QA en alternance"
+                                    data-en="Work-study QA Tester">
+                                    Testeur QA en alternance
+                                </h4>
+                                <p data-fr="Anyware Video, Marseille — Tests de version, gestion de tickets JIRA, contribution à l'automatisation et l'amélioration des processus QA."
+                                   data-en="Anyware Video, Marseille — Version testing, JIRA ticket management, contribution to QA automation and process improvement.">
+                                    Anyware Video, Marseille — Tests de version, gestion de tickets JIRA, contribution à l'automatisation et l'amélioration des processus QA.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date">2021 — 2022</span>
+                                <h4 data-fr="Bénévole — Activités périscolaires"
+                                    data-en="Volunteer — After-school activities">
+                                    Bénévole — Activités périscolaires
+                                </h4>
+                                <p data-fr="École primaire Claude Chappe, Chambray-les-Tours — Organisation des TAP, mise en place d'activités sportives et pédagogiques."
+                                   data-en="Claude Chappe primary school, Chambray-les-Tours — Coordinating after-school activities, sports and educational sessions.">
+                                    École primaire Claude Chappe, Chambray-les-Tours — Organisation des TAP, mise en place d'activités sportives et pédagogiques.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date">2022</span>
+                                <h4 data-fr="Contrat saisonnier" data-en="Seasonal contract">Contrat saisonnier</h4>
+                                <p data-fr="Renault Retail Group — Préparation des véhicules en pré-livraison, contrôle des affiches de prix et aide à la livraison."
+                                   data-en="Renault Retail Group — Pre-delivery vehicle preparation, price sticker checks and delivery support.">
+                                    Renault Retail Group — Préparation des véhicules en pré-livraison, contrôle des affiches de prix et aide à la livraison.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-body">
+                                <span class="tl-date"
+                                      data-fr="Stage de 3ème"
+                                      data-en="9th grade internship">
+                                    Stage de 3ème
+                                </span>
+                                <h4 data-fr="Stage de découverte professionnelle"
+                                    data-en="Professional discovery internship">
+                                    Stage de découverte professionnelle
+                                </h4>
+                                <p data-fr="BPALC — Banque Populaire Alsace Lorraine Champagne. Assistant des conseillers, aide aux réponses mails, familiarisation avec les outils informatiques et de communication."
+                                   data-en="BPALC — Banque Populaire Alsace Lorraine Champagne. Advisor assistant, email support, familiarisation with IT and communication tools.">
+                                    BPALC — Banque Populaire Alsace Lorraine Champagne. Assistant des conseillers, aide aux réponses mails, familiarisation avec les outils informatiques et de communication.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CONTACT ════════════════════════════════════════════ -->
+    <section id="contact">
+        <div class="section-inner">
+            <h2 class="section-title" data-fr="Contact" data-en="Contact">Contact</h2>
+            <div class="contact-wrapper">
+                <p class="contact-intro"
+                   data-fr="N'hésitez pas à me contacter pour toute opportunité ou collaboration."
+                   data-en="Feel free to reach out for any opportunity or collaboration.">
+                    N'hésitez pas à me contacter pour toute opportunité ou collaboration.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:lcostalles@gmail.com" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <polyline points="2,4 12,13 22,4"/>
+                        </svg>
+                        lcostalles@gmail.com
+                    </a>
+                    <a href="tel:+33621303009" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        06 21 30 30 09
+                    </a>
+                </div>
+                <a href="assets/CV_COSTALLES_Lucas_2026.pdf" download class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <span data-fr="Télécharger mon CV" data-en="Download my CV">Télécharger mon CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ═════════════════════════════════════════════ -->
+    <footer>
+        <p>Lucas COSTALLES &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
